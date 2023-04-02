@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Tugas5</h1>
+
+<p>Click the button to answer the question</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="tugas5"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let Singkatan = prompt("Sebutkan kepanjangan dari nama IB ??");
+  switch(Singkatan) {
+    case "Impact Byte":
+      text = "Selamat Jawaban Kamu Benar";
+      break;
+    default:
+      text = "Sayang sekali jawaban anda masih kurang tepat";
+  }
+  document.getElementById("tugas5").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
